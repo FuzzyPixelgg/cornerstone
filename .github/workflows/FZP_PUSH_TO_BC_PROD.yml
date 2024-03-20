@@ -49,8 +49,8 @@ jobs:
           TOKEN: ${{ secrets.STENCIL_ACCESS_TOKEN_PRODUCTION }}
         run: stencil init -u $URL -t $TOKEN -p 3000 -h https://api.bigcommerce.com
 
-      - name: Pull configs from current theme
-        run: stencil pull
+      #- name: Pull configs from current theme
+      #  run: stencil pull
 
       - name: Push theme live, automatically deleting oldest theme if necessary
         run: stencil push -a Bold -d -c 1
