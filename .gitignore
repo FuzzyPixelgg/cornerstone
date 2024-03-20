@@ -11,3 +11,10 @@ vendor/bundle
 *.js.map
 *.zip
 .idea/
+
+
+#TMPG
+CHANGELOG.md
+package-lock.json
+package.json
+config.json
